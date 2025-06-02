@@ -1,10 +1,12 @@
-/* VARIABLES & BASE RESET */
+/* ================================
+   VARIABLES & BASE RESET
+   ================================ */
 :root {
   --color-bg: #0f172a;
   --color-surface: #1e293b;
   --color-primary: #0d6efd;
   --color-secondary: #6c757d;
-  --color-light: #f8f9fa;
+  --color-light: #f8f9fa;       /* used for footer/about backgrounds */
   --color-light-text: #f8f9fa;
   --color-dark-text: #212529;
   --color-info: #17a2b8;
@@ -27,7 +29,9 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
+/* ================================
+   NAVBAR
+   ================================ */
 .navbar-brand span {
   font-size: 1.2rem;
   font-weight: 500;
@@ -45,7 +49,9 @@ body {
   color: var(--color-primary) !important;
 }
 
-/* HERO SECTION */
+/* ================================
+   HERO SECTION
+   ================================ */
 .hero {
   background: linear-gradient(135deg, #1e3a8a, var(--color-bg));
   text-align: center;
@@ -53,7 +59,7 @@ body {
   margin-top: var(--nav-height);
   color: var(--color-light-text);
   box-shadow: 0 4px 12px var(--color-shadow);
-  opacity: 0;
+  opacity: 0; /* start hidden for fade-in */
   transition: opacity 1.2s ease-in-out;
 }
 .hero.visible {
@@ -68,11 +74,12 @@ body {
   color: var(--color-secondary);
 }
 
-/* TIMELINE SECTION */
+/* ================================
+   TIMELINE SECTION
+   ================================ */
 .timeline-container {
   background-color: var(--color-surface);
   padding: 3rem 0;
-  position: relative;
 }
 .timeline-container .container {
   max-width: 1200px;
@@ -103,7 +110,7 @@ body {
   border-radius: 5px;
 }
 .timeline-cards::-webkit-scrollbar-thumb:hover {
-  background-color: #0b5ed7;
+  background-color: #0b5ed7; /* darker shade */
 }
 
 /* Firefox Scrollbar */
@@ -122,14 +129,21 @@ body {
   scroll-snap-align: start;
   background-color: var(--color-bg);
   box-shadow: 0 0 15px var(--color-shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
-              opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-  opacity: 0;
+  opacity: 0;               /* start hidden */
   transform: translateY(40px);
+  transition:
+    opacity 0.8s ease-in-out,
+    transform 0.8s ease-in-out,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 .timeline-card.visible {
   opacity: 1;
   transform: translateY(0);
+}
+.timeline-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 255, 255, 0.2);
 }
 .timeline-card img {
   width: 100%;
@@ -158,15 +172,11 @@ body {
   font-size: 0.9rem;
   color: var(--color-secondary);
 }
-.timeline-card:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 255, 255, 0.2);
-}
 .timeline-card:hover .details {
   max-height: 150px;
 }
 
-/* Responsive: Stack on smaller screens */
+/* Responsive: Stack on narrower screens */
 @media (max-width: 768px) {
   .timeline-cards {
     flex-direction: column;
@@ -178,7 +188,9 @@ body {
   }
 }
 
-/* FEATURES SECTION (3-column) */
+/* ================================
+   FEATURES SECTION (3-column)
+   ================================ */
 #features {
   background-color: var(--color-bg);
   color: var(--color-light-text);
@@ -208,11 +220,13 @@ body {
 }
 #features .btn-primary:hover,
 #features .btn-primary:focus {
-  background-color: #0b5ed7;
+  background-color: #0b5ed7; /* darker shade */
   border-color: #0b5ed7;
 }
 
-/* SUBSCRIPTION FORM */
+/* ================================
+   SUBSCRIPTION FORM
+   ================================ */
 #subscribe {
   background-color: var(--color-surface);
   color: var(--color-light-text);
@@ -232,6 +246,8 @@ body {
 #subscribeForm .valid-feedback {
   display: none;
 }
+
+/* Form validation via JS will toggle these */
 #subscribeForm.was-validated .invalid-feedback {
   display: block;
 }
@@ -239,7 +255,9 @@ body {
   display: block;
 }
 
-/* FOOTER (Contact) */
+/* ================================
+   FOOTER (Contact)
+   ================================ */
 .footer {
   background-color: var(--color-light);
   color: var(--color-dark-text);
@@ -255,7 +273,9 @@ body {
   text-decoration: underline;
 }
 
-/* ABOUT SECTION */
+/* ================================
+   ABOUT SECTION
+   ================================ */
 .about-container {
   background-color: var(--color-light);
   color: var(--color-dark-text);
@@ -268,7 +288,9 @@ body {
   line-height: 1.5;
 }
 
-/* REFLECTIONS (Accordion) */
+/* ================================
+   REFLECTIONS (Accordion)
+   ================================ */
 #reflections {
   background-color: var(--color-surface);
   color: var(--color-light-text);
@@ -289,7 +311,9 @@ body {
   color: var(--color-dark-text);
 }
 
-/* RTL OVERRIDES */
+/* ================================
+   RTL SPECIFIC OVERRIDES
+   ================================ */
 [dir="rtl"] {
   direction: rtl !important;
   unicode-bidi: embed;
@@ -311,13 +335,15 @@ body {
   text-align: right;
 }
 
-/* UTILITY */
+/* ================================
+   UTILITY CLASSES (Help Accessibility)
+   ================================ */
 .visually-hidden {
   position: absolute !important;
   width: 1px;
   height: 1px;
   padding: 0;
-  margin: -1px;
+  margin: -1px;   /* fixed hyphen-minus */
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
