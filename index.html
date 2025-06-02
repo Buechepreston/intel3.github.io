@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intel: Sustainability Through the Ages</title>
+
+  <!-- Bootstrap CSS v5.3 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeo6uYhEqqGWh9lE6G+WSU5pGVHjV5E3j5V4lURyLrI0RSJo"
+    crossorigin="anonymous"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+
+  <!-- Your Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Home: Intel Sustainability">
+        <img src="img/intel-header-logo.svg" alt="Intel Logo" height="40" />
+        <span class="ms-2">Intel Sustainability</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navLinks"
+        aria-controls="navLinks"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#subscribe">Subscribe</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reflections">Reflections</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item dropdown">
+            <button
+              class="btn btn-sm btn-outline-light dropdown-toggle"
+              id="langDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >Language</button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+              <li><button class="dropdown-item" data-lang="en">English (LTR)</button></li>
+              <li><button class="dropdown-item" data-lang="ar">العربية (RTL)</button></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero text-center text-light" role="banner">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold">Sustainability Through the Ages</h1>
+      <p class="lead text-secondary">
+        Explore Intel’s journey through time, discovering how our commitment to innovation
+        has shaped a more sustainable future for technology and our planet.
+      </p>
+    </div>
+  </header>
+
+  <!-- TIMELINE SECTION -->
+  <section id="timeline" class="timeline-container py-5" aria-labelledby="timelineLabel">
+    <div class="container">
+      <h2 id="timelineLabel" class="h3 text-primary text-center mb-4">Key Milestones</h2>
+      <div class="d-flex overflow-auto timeline-cards">
+        <!-- Card 1: 1968 -->
+        <article class="timeline-card card flex-shrink-0 me-3" tabindex="0">
+          <img
+            src="img/1.jpg"
+            class="card-img-top"
+            alt="1968: Intel Founded – Photo of Robert Noyce & Gordon Moore"
+          />
+          <div class="card-body bg-dark text-light">
+            <h3 class="card-title text-info">1968</h3>
+            <h4 class="card-subtitle mb-2">Intel Founded</h4>
+            <p>
+              Robert Noyce and Gordon Moore rename NM Electronics to Intel Corporation,
+              laying the foundation for decades of innovation.
+            </p>
+            <div class="details">
+              <small class="text-secondary">
+                This set the stage for Intel’s legacy in microprocessors and
+                semiconductor breakthroughs.
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: 1971 -->
+        <article class="timeline-card card flex-shrink-0 me-3" tabindex="0">
+          <img
+            src="img/2.jpg"
+            class="card-img-top"
+            alt="1971: First Microprocessor – Photo of Intel 4004 Chip"
+          />
+          <div class="card-body bg-dark text-light">
+            <h3 class="card-title text-info">1971</h3>
+            <h4 class="card-subtitle mb-2">First Microprocessor</h4>
+            <p>
+              Intel debuts the 4004, the world’s first commercial microprocessor,
+              igniting a computing revolution.
+            </p>
+            <div class="details">
+              <small class="text-secondary">
+                That chip changed everything—from calculators to personal computers.
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: 1978 -->
+        <article class="timeline-card card flex-shrink-0 me-3" tabindex="0">
+          <img
+            src="img/3.jpg"
+            class="card-img-top"
+            alt="1978: 8086 Processor – Photo of the 8086 Die"
+          />
+          <div class="card-body bg-dark text-light">
+            <h3 class="card-title text-info">1978</h3>
+            <h4 class="card-subtitle mb-2">8086 Processor</h4>
+            <p>
+              Launch of the 8086, establishing the x86 architecture that drives
+              modern PCs and servers.
+            </p>
+            <div class="details">
+              <small class="text-secondary">
+                The x86 family remains at the heart of most desktops and laptops.
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: 1985 -->
+        <article class="timeline-card card flex-shrink-0 me-3" tabindex="0">
+          <img
+            src="img/4.jpg"
+            class="card-img-top"
+            alt="1985: 386 Processor – Photo of 386 Chip Packaging"
+          />
+          <div class="card-body bg-dark text-light">
+            <h3 class="card-title text-info">1985</h3>
+            <h4 class="card-subtitle mb-2">386 Processor</h4>
+            <p>
+              Intel introduces the 386 (32-bit), ushering in new performance
+              capabilities for personal computers.
+            </p>
+            <div class="details">
+              <small class="text-secondary">
+                32-bit computing opened doors for complex software and multitasking.
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: 2006 -->
+        <article class="timeline-card card flex-shrink-0 me-3" tabindex="0">
+          <img
+            src="img/placeholder2006.png"
+            class="card-img-top"
+            alt="2006: Peak GHG Emissions – Placeholder Image"
+          />
+          <div class="card-body bg-dark text-light">
+            <h3 class="card-title text-info">2006</h3>
+            <h4 class="card-subtitle mb-2">Peak GHG Emissions</h4>
+            <p>
+              Intel’s highest annual greenhouse-gas emissions in operations.
+              Shortly after, massive investments in abatement & renewables begin.
+            </p>
+            <div class="details">
+              <small class="text-secondary">
+                Sustainability shifted from “nice-to-have” to a core corporate strategy.
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: 2020 -->
+        <article class="timeline-card card flex-shrink-0 me-3" tabindex="0">
+          <img
+            src="img/placeholder2020.png"
+            class="card-img-top"
+            alt="2020: RISE Strategy – Placeholder Image"
+          />
+          <div class="card-body bg-dark text-light">
+            <h3 class="card-title text-info">2020</h3>
+            <h4 class="card-subtitle mb-2">RISE Strategy</h4>
+            <p>
+              Intel rolls out RISE (Responsible, Inclusive, Sustainable, Enabling),
+              setting 2030 goals on climate, water, and waste.
+            </p>
+            <div class="details">
+              <small class="text-secondary">
+                RISE provided a roadmap for Intel’s next decade of sustainability leadership.
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7: 2022 -->
+        <article class="timeline-card card flex-shrink-0 me-3" tabindex="0">
+          <img
+            src="img/placeholder2022.png"
+            class="card-img-top"
+            alt="2022: Net-Zero by 2040 – Placeholder Image"
+          />
+          <div class="card-body bg-dark text-light">
+            <h3 class="card-title text-info">2022</h3>
+            <h4 class="card-subtitle mb-2">Net-Zero by 2040</h4>
+            <p>
+              Intel pledges net-zero GHG (Scope 1 & 2) across all global operations by 2040.
+            </p>
+            <div class="details">
+              <small class="text-secondary">
+                An ambitious commitment that spurred industry-wide eco innovations.
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8: 2023 -->
+        <article class="timeline-card card flex-shrink-0 me-3" tabindex="0">
+          <img
+            src="img/placeholder2023.png"
+            class="card-img-top"
+            alt="2023: 99% Renewable Electricity – Placeholder Image"
+          />
+          <div class="card-body bg-dark text-light">
+            <h3 class="card-title text-info">2023</h3>
+            <h4 class="card-subtitle mb-2">99% Renewable Electricity</h4>
+            <p>
+              Intel hits 99% renewable electricity usage worldwide, drastically lowering carbon emissions.
+            </p>
+            <div class="details">
+              <small class="text-secondary">
+                Nearly all power now comes from wind, solar, and other renewables.
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 9: 2024 -->
+        <article class="timeline-card card flex-shrink-0" tabindex="0">
+          <img
+            src="img/placeholder2024.png"
+            class="card-img-top"
+            alt="2024: Sustainability Summit – Placeholder Image"
+          />
+          <div class="card-body bg-dark text-light">
+            <h3 class="card-title text-info">2024</h3>
+            <h4 class="card-subtitle mb-2">Sustainability Summit</h4>
+            <p>
+              Intel hosts its first Sustainability Summit, uniting suppliers,
+              officials, and industry leaders to accelerate Eco-innovations.
+            </p>
+            <div class="details">
+              <small class="text-secondary">
+                A global forum to co-create the next generation of sustainable chip manufacturing.
+              </small>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="py-5 bg-light text-dark" aria-labelledby="featuresLabel">
+    <div class="container">
+      <h2 id="featuresLabel" class="h3 text-center mb-4">Why Intel Sustainability?</h2>
+      <div class="row gx-4 gy-4">
+        <!-- Column 1 -->
+        <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center">
+          <div class="mb-3">
+            <i class="bi bi-recycle" aria-hidden="true" style="font-size: 2.5rem; color: #0d6efd;"></i>
+            <span class="visually-hidden">Recycling Icon</span>
+          </div>
+          <h3 class="h5 fw-bold">Eco-friendly Manufacturing</h3>
+          <p class="small text-secondary">
+            Intel invests heavily in chemical abatement and water positivity,
+            ensuring every chip is made with minimal environmental impact.
+          </p>
+          <a href="#timeline" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center">
+          <div class="mb-3">
+            <i class="bi bi-lightning-fill" aria-hidden="true" style="font-size: 2.5rem; color: #0d6efd;"></i>
+            <span class="visually-hidden">Lightning Icon</span>
+          </div>
+          <h3 class="h5 fw-bold">Renewable Energy</h3>
+          <p class="small text-secondary">
+            Over 99% of Intel’s global electricity now comes from renewables,
+            driving the transition to a carbon-neutral future.
+          </p>
+          <a href="#timeline" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center">
+          <div class="mb-3">
+            <i class="bi bi-people-fill" aria-hidden="true" style="font-size: 2.5rem; color: #0d6efd;"></i>
+            <span class="visually-hidden">People Icon</span>
+          </div>
+          <h3 class="h5 fw-bold">Community Impact</h3>
+          <p class="small text-secondary">
+            Intel’s local water restoration projects and sustainability summits
+            empower communities to co-create a greener tomorrow.
+          </p>
+          <a href="#timeline" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIPTION FORM & FOOTER -->
+  <section id="subscribe" class="py-5 text-light bg-dark" aria-labelledby="subscribeLabel">
+    <div class="container">
+      <h2 id="subscribeLabel" class="h3 text-center mb-4">Stay Updated</h2>
+      <form class="row justify-content-center" id="subscribeForm" novalidate aria-describedby="subscribeHelp">
+        <div class="col-12 col-md-6">
+          <label for="emailInput" class="form-label visually-hidden">Email address</label>
+          <input
+            type="email"
+            class="form-control form-control-lg"
+            id="emailInput"
+            placeholder="Enter your email"
+            aria-required="true"
+            required
+          />
+          <div id="subscribeHelp" class="form-text text-secondary">
+            We’ll never share your email. Promise.
+          </div>
+        </div>
+        <div class="col-12 col-md-2 mt-3 mt-md-0">
+          <button type="submit" class="btn btn-primary btn-lg w-100">Subscribe</button>
+        </div>
+        <div class="col-12 mt-2">
+          <div class="invalid-feedback text-center">
+            Please enter a valid email address.
+          </div>
+          <div class="valid-feedback text-center text-success">
+            Thanks for subscribing!
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER CONTACT -->
+  <footer id="contact" class="footer py-4 bg-light" aria-labelledby="contactLabel">
+    <div class="container text-center">
+      <h2 id="contactLabel" class="h5 mb-3">Contact & Connect</h2>
+      <p class="small text-secondary">
+        &copy; 2025 Intel Sustainability Showcase. Built by Preston Bueche.
+      </p>
+      <a
+        href="https://github.com/buechepreston/prj3_intel"
+        class="btn btn-outline-primary btn-sm"
+        target="_blank"
+        rel="noopener"
+      >View Code on GitHub</a>
+      <div class="mt-3">
+        <a href="https://www.linkedin.com/in/prestonbueche/" class="text-secondary me-3" aria-label="LinkedIn Profile">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/prestonbueche" class="text-secondary me-3" aria-label="Twitter Profile">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="mailto:preston@example.com" class="text-secondary" aria-label="Email">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-container py-5 bg-white text-dark" aria-labelledby="aboutLabel">
+    <div class="container">
+      <h2 id="aboutLabel" class="h3 mb-4 text-center">About This Project</h2>
+      <p class="text-center mx-auto mb-3" style="max-width: 700px;">
+        This site was built by Preston Bueche (<a href="https://buechepreston.github.io" target="_blank" rel="noopener">buechepreston.github.io</a>) to showcase Intel’s
+        sustainability milestones, from the very first microprocessor to net-zero
+        ambitions. Every image and text is styled for high contrast and full accessibility.
+        Feel free to browse the timeline, subscribe for updates, or read the reflections below.
+      </p>
+    </div>
+  </section>
+
+  <!-- REFLECTIONS SECTION -->
+  <section id="reflections" class="py-5 bg-light" aria-labelledby="reflectionsLabel">
+    <div class="container">
+      <h2 id="reflectionsLabel" class="h3 text-center mb-4">Reflections</h2>
+      <div class="accordion" id="reflectionAccordion">
+        <!-- Probabilistic AI -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="probAIHeading">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#probAICollapse"
+              aria-expanded="false"
+              aria-controls="probAICollapse"
+            >Probabilistic AI Reflection</button>
+          </h2>
+          <div
+            id="probAICollapse"
+            class="accordion-collapse collapse"
+            aria-labelledby="probAIHeading"
+            data-bs-parent="#reflectionAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                In building this site, I used randomness when choosing sample placeholder images
+                for “2006,” “2020,” “2022,” etc. Because the images were not official Intel art, I
+                rated them with a probability distribution—from 0 to 100—to pick the one that best
+                represents each milestone. This exercise helped me think about how AI can “guess” the
+                most likely image a user expects, then refine it based on user feedback. It’s a small
+                example of how generative or probabilistic AI could automatically pick the “best
+                image” for marketing pages.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interview Question Reflection -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="interviewHeading">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#interviewCollapse"
+              aria-expanded="false"
+              aria-controls="interviewCollapse"
+            >Interview Question Reflection</button>
+          </h2>
+          <div
+            id="interviewCollapse"
+            class="accordion-collapse collapse"
+            aria-labelledby="interviewHeading"
+            data-bs-parent="#reflectionAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                During my Lululemon interview prep, I learned the importance of open-ended questions,
+                like “How do you keep customers engaged?” In a web-dev context, that taught me to
+                build my website so visitors can easily scroll, click, and explore—rather than just
+                stare at a static page. By adding interactive accordion sections and smooth scrolling,
+                I answered my own interview question: “How can I keep a user engaged for longer than
+                30 seconds?” The result: a clean design that encourages discovery.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- LinkedIn Post Reflection -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="linkedinHeading">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#linkedinCollapse"
+              aria-expanded="false"
+              aria-controls="linkedinCollapse"
+            >LinkedIn Post Reflection</button>
+          </h2>
+          <div
+            id="linkedinCollapse"
+            class="accordion-collapse collapse"
+            aria-labelledby="linkedinHeading"
+            data-bs-parent="#reflectionAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                For my LinkedIn post, I wrote about Week 1: “It’s weird to not learn AI first, then
+                apply it.” I realized that, for web-dev, hands-on building (like creating this site)
+                cements what I learn about JavaScript, Bootstrap, and accessibility. By posting my
+                journey with real screenshots, I engaged my network and sparked conversations about
+                how AI and code interconnect—exactly the kind of professional branding I aimed for.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS v5.3 Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-QFmu7iRZpUfSv3gtY4+TvIJefZFlNxA3EhmrP2bD0/+QwovgOKv637LIJ0Qdwlt5"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Your Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
